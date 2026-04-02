@@ -48,7 +48,7 @@ Google Maps APIとOpenWeatherMap APIを連携し、
 
 ## 🪄 デモサイト
 🔗 **GitHub Pages 公開中**  
-👉 [https://mei-oku.github.io/map_app/](https://mei-oku.github.io/map_app/)
+👉 [https://mei-oku.github.io/map_app/](https://hikaru-taniguchi.github.io/map_app/)
 
 ---
 ``````
