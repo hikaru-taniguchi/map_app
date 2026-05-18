@@ -36,9 +36,9 @@ async function initMap() {
 
         weatherHtml = `
           <hr>
-          <p><b>現在の天気：</b> ${weatherData.weather[0].description}</p>
+          <p><strong>現在の天気：</strong> ${weatherData.weather[0].description}</p>
           <img src="${iconUrl}" alt="天気アイコン" style="width:50px;height:50px;">
-          <p>🌡 ${weatherData.main.temp.toFixed(1)}℃</p>
+          <p>気温：${weatherData.main.temp.toFixed(1)}℃</p>
         `;
       }
     } catch (error) {
@@ -49,9 +49,9 @@ async function initMap() {
       content: `
         <div style="text-align:center;">
           <h3>${town.name}</h3>
-          <img src="${town.img}" style="width:150px; height:auto; border-radius:8px;"><br>
+          <img src="${town.img}" alt="${town.name}" style="width:150px; height:auto; border-radius:8px;">
           <p>${town.desc}</p>
-          <a href="${town.url}" target="_blank">▶ 公式サイトを見る</a>
+          <a href="${town.url}" target="_blank">公式サイトを見る</a>
           ${weatherHtml}
         </div>
       `,
